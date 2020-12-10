@@ -1,0 +1,271 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+section.nav-to-body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(section1_bg_1.jpg) no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header.navigation-links {
+  padding: 8px 0 0 0;
+}
+
+header.navigation-links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 6px 2px;
+  color: #fff;
+}
+
+.header-container .muni-logo {
+  margin-left: 80px;
+}
+
+.muni-logo img {
+  width: 230px;
+  cursor: pointer;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 5px;
+  margin-left: 10px;
+}
+
+nav.nav-links {
+  display: block;
+}
+
+nav.nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.displaying-none {
+  display: none;
+}
+
+nav.nav-links ul.link-lists li {
+  padding-right: 10px;
+}
+
+div.signers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 60px;
+}
+
+div.signers a:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+div.signers a:nth-of-type(2) {
+  -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.55);
+          box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.55);
+}
+
+header.navigation-links a:hover {
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 990px) {
+  header.navigation-links .muni-logo {
+    margin-left: 30px;
+  }
+  header.navigation-links .muni-logo img {
+    width: 160px;
+  }
+  header.navigation-links div.header-container div.mobile-signers {
+    display: block;
+    position: absolute;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    right: 0;
+    padding-right: 15px;
+  }
+  header.navigation-links .header-container .mobile-signers a {
+    padding-left: 10px;
+  }
+  header.navigation-links .mobile-signers a {
+    font-size: 1rem;
+  }
+  header.navigation-links ul.link-lists li a.closing-button {
+    text-align: right;
+  }
+  header.navigation-links div.mobile-signers a:nth-of-type(1) {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  header.navigation-links div.header-menu {
+    position: fixed;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 230px;
+    top: 0;
+    right: -230px;
+    background-color: #fff;
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    z-index: 10;
+  }
+  header.navigation-links div.signers {
+    margin: 0;
+  }
+  header.navigation-links nav.nav-links ul,
+  header.navigation-links div.signers {
+    display: block;
+  }
+  header.navigation-links div.header-container div.header-menu a {
+    line-height: 45px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    color: #000;
+  }
+  header.navigation-links.mobile .header-container .header-menu {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 990px) and (max-width: 690px) {
+  section.nav-to-body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(section1_bg_1_change.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=style.css.map */
