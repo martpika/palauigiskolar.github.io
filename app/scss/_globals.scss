@@ -17,12 +17,13 @@ body {
   width: 100%;
   display: block;
   margin: auto;
+  position: relative;
 }
 .row {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  //align-items: center;
 }
 .row::after {
   content: "";
@@ -118,9 +119,113 @@ header.navigation-links a:hover {
 }
 // ###################### End of First Section
 
+// ###################### Start of Second Section
+section.second-section {
+  height: 100vh;
+  background-color: #fffefe;
+  padding-top: 10px;
+  background: url(test_sb2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.flex-padding {
+  padding: 15px 30px 0 30px;
+}
+.goal-container {
+  position: relative; 
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+#mission-vision {
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+.scholarship-goal {
+  height: 100%;
+}
+.goal-container .scholarship-goal p {
+  margin: 0;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 1.3rem;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .7);
+}
+.second-section .carousel-container {
+  margin: 10px;
+  border: 5px solid rgb(255, 255, 255);
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 2px rgba(0, 48, 2, 0.7);
+}
+.second-section .carousel-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.second-section .carousel-slide img {
+  width: inherit;
+  height: inherit;
+}
+#prevbtn, #nextbtn {
+  position: absolute;
+  color: rgba(184, 184, 184, 0.5);
+  top: 50%;
+  z-index: 11;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+.arrow-left {
+  left: -10px;
+  opacity: 0;
+}
+.arrow-right{
+  right: -10px;
+  opacity: 0;
+}
+.carousel-container:hover .arrow-left{
+  transition: all .4s ease;
+  opacity: .8;
+  left: 20px;
+}
+.carousel-container:hover .arrow-right {
+  transition: all .4s ease;
+  opacity: .8;
+  right: 20px;
+}
+.from-banner {
+  width: 100%;
+  position: relative;
+}
+.from-banner h1.welcome {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+.pump {
+  display: inline-block;
+  animation-name: pump-sign;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  transform: scale(2);
+}
+@keyframes pump-sign {
+  0%, 100% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+}
+// ###################### End of Second Section
+
 // ############################################
 // #################### Start of Mobile Responsive
-@media screen and(max-width: 990px) {
+@media screen and(max-width: 1080px) {
   header.navigation-links .muni-logo {
     margin-left: 30px;
   }
@@ -176,17 +281,61 @@ header.navigation-links a:hover {
     transition: all .5s ease;
     right: 0;
   }
-  @media screen and(max-width: 690px) {
-    section.nav-to-body {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      background: url(section1_bg_1_change.jpg) no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      background-size: cover;
+  .scholarship-goal p {
+    font-size: 1rem !important;
+  }
+  #mission-vision {
+    font-size: 2rem;
+  }
+  .carousel-container {
+    height: 360px !important;
+  }
+  @media screen and(max-width: 780px){
+    #mission-vision {
+      font-size: 1.2rem;
+    }
+    .goal-container .scholarship-goal p {
+      font-size: .9rem !important;
+    }
+    .carousel-container {
+      width: 58%;
+      height: 300px !important;
+    }
+    @media screen and(max-width: 690px) {
+      section.nav-to-body {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: url(section1_bg_1_change.jpg) no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      section.second-section {
+        height: 100vh;
+        background-color: #fffefe;
+        padding-top: 10px;
+        background: url(test_sb2_change1.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .goal-container {
+        width: 100%;
+      }
+      .goal-container .scholarship-goal p {
+        font-size: .8rem !important;
+      }
+      .carousel-container {
+        width: 100%;
+        height: 220px !important;
+      }
+      .from-banner h1 {
+        font-size: 2rem !important;
+      }
     }
   }
+  
 }
 // #################### End of Mobile Responsive
 // ############################################
