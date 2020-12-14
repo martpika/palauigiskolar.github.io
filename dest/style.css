@@ -90,7 +90,7 @@ section.nav-to-body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(section1_bg_1.jpg) no-repeat;
+  background: url(Home_Page_Section1_BG.jpg) no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -106,7 +106,7 @@ ul {
 }
 
 header.navigation-links {
-  padding: 8px 0 0 0;
+  padding: 8px 0 8px 0;
 }
 
 header.navigation-links a {
@@ -195,10 +195,11 @@ section.second-section {
   height: 100vh;
   background-color: #fffefe;
   padding-top: 10px;
-  background: url(test_sb2.jpg) no-repeat;
+  background: url(Home_Page_Section2_BG.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  position: relative;
 }
 
 .flex-padding {
@@ -219,10 +220,6 @@ section.second-section {
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
   text-align: center;
-}
-
-.scholarship-goal {
-  height: 100%;
 }
 
 .goal-container .scholarship-goal p {
@@ -290,15 +287,19 @@ section.second-section {
 }
 
 .from-banner {
-  width: 100%;
-  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  width: 70%;
 }
 
 .from-banner h1.welcome {
   font-family: 'Oswald', sans-serif;
-  font-size: 3rem;
+  text-shadow: 2px 2px 1px black;
+  font-size: 3.5rem;
   text-align: center;
   color: white;
+  margin: 0;
   margin-top: 20px;
 }
 
@@ -334,6 +335,147 @@ section.second-section {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
   }
+}
+
+footer.index-footsy {
+  background-color: white;
+}
+
+footer.index-footsy * {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+footer .first-footer-col h2 {
+  margin: 0;
+  margin-top: 40px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.about-page-change-bg {
+  background: url(HomePage_Section1_BG_plain.jpg) no-repeat !important;
+}
+
+.about-us-banner {
+  width: 100%;
+}
+
+.about-us-banner h1 {
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 2px 2px 1px black;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 10px;
+}
+
+.about-page-row {
+  padding-left: 50px;
+}
+
+.about-story {
+  margin-left: 50px;
+}
+
+.about-image {
+  padding-left: 50px;
+}
+
+.about-image img {
+  width: 100%;
+  position: relative;
+  border-radius: 13px;
+  -webkit-box-shadow: 5px 2px 10px 2px rgba(255, 255, 255, 0.3);
+          box-shadow: 5px 2px 10px 2px rgba(255, 255, 255, 0.3);
+}
+
+.contact-page-change-bg {
+  background: url(HomePage_Section1_BG_plain.jpg) no-repeat !important;
+}
+
+div.contact-us-banner {
+  width: 100%;
+}
+
+.contact-us-banner h1 {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 1px black;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 10px;
+}
+
+form.message-us-container {
+  border: 1px solid black;
+  margin-left: 10%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 20px;
+}
+
+form.message-us-container h2 {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.message-us-container div {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.message-us-container div input {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  width: 40%;
+  padding: 12px;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.sender-message-container textarea {
+  resize: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 12px;
+}
+
+.contact-submit-button-container button {
+  border-radius: 13px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.our-info-container {
+  border: 1px solid black;
+  padding-left: 20px;
+}
+
+.our-info-container * {
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.our-info-container h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.our-info-container h3 {
+  margin: 10px 0px;
+}
+
+.contact-opacity {
+  opacity: .8;
 }
 
 @media screen and (max-width: 1080px) {
@@ -407,18 +549,85 @@ section.second-section {
   .carousel-container {
     height: 360px !important;
   }
+  .from-banner {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+  }
+  .from-banner h1.welcome {
+    font-size: 3rem;
+  }
+  .about-page-change-bg {
+    background: url(HomePage_Section1_BG_plain.jpg) no-repeat !important;
+    height: auto !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+  }
+  .about-us-banner h1 {
+    font-size: 4rem;
+  }
+  .about-story {
+    margin-left: 25px;
+  }
+  .about-image {
+    width: 50%;
+  }
+  .contact-page-change-bg {
+    background: url(HomePage_Section1_BG_plain.jpg) no-repeat !important;
+    height: auto !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+  }
+  .contact-us-banner h1 {
+    font-size: 3.5rem;
+  }
+  .our-info-container {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 1080px) and (max-width: 780px) {
   #mission-vision {
     font-size: 1.2rem;
   }
+  .goal-container {
+    width: 35%;
+  }
   .goal-container .scholarship-goal p {
     font-size: .9rem !important;
   }
   .carousel-container {
-    width: 58%;
+    width: 50%;
     height: 300px !important;
+  }
+  .from-banner h1.welcome {
+    font-size: 2.5rem;
+  }
+  .about-page-row {
+    padding: 0;
+  }
+  .about-story {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+  }
+  .about-image {
+    padding: 0;
+    width: 80%;
+    margin: auto;
+  }
+  .message-us-container,
+  .our-info-container {
+    margin: auto !important;
+    width: 90%;
+  }
+  form.message-us-container input {
+    width: 100%;
+  }
+  .our-info-container {
+    text-align: center;
   }
 }
 
@@ -427,7 +636,7 @@ section.second-section {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(section1_bg_1_change.jpg) no-repeat;
+    background: url(Home_Page_Section1_BG_change.jpg) no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -436,7 +645,7 @@ section.second-section {
     height: 100vh;
     background-color: #fffefe;
     padding-top: 10px;
-    background: url(test_sb2_change1.jpg) no-repeat;
+    background: url(Home_Page_Section2_BG_change.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -451,8 +660,20 @@ section.second-section {
     width: 100%;
     height: 220px !important;
   }
+  .arrow-left {
+    left: 20px;
+    opacity: .8;
+  }
+  .arrow-right {
+    right: 20px;
+    opacity: .8;
+  }
   .from-banner h1 {
     font-size: 2rem !important;
+  }
+  .about-page-container p {
+    font-size: .9rem;
+    text-align: justify;
   }
 }
 /*# sourceMappingURL=style.css.map */

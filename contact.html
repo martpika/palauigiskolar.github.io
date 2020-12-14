@@ -4,26 +4,26 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palauig Scholarship</title>
+    <title>About</title>
     <link rel="stylesheet" href="dest/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <section class="nav-to-body">
+    <section class="nav-to-body contact-page-change-bg">
       <header class="navigation-links" id="first-navbar">
         <div class="header-container">
-          <div class="muni-logo"><img src="dest/PALAUIG-SEAL-2.png"></div>
+          <div class="muni-logo"><a href="index.html"><img src="dest/PALAUIG-SEAL-2.png"></a></div>
           <div class="header-menu">
             <nav class="nav-links">
               <ul class="link-lists">
                 <li><a class="closing-button displaying-none" onclick="slidemenu()" href="javascript:void(0);">&#x274c;</a></li>
                 <li><a href="#events">View events</a></li>
                 <li><a href="about.html">About us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#feedback">Feedbacks</a></li>
               </ul>
             </nav>
@@ -38,43 +38,50 @@
           </div>
         </div>
       </header>
-      <div class="banner-bg"></div>
-    </section>
-
-    <section class="second-section">
+      <div class="contact-us-banner">
+        <h1>Contact Us</h1>
+      </div>
       <div class="container">
-        <div class="row flex-padding">
-          <div class="goal-container col-3">
-            <div class="scholarship-goal">
-              <h1 id="mission-vision">Our Mission</h1>
-              <p>We help Palauig college students who are in need of assistance, giving the aid that they need in their study.</p>
-              <hr>
-              <h1 id="mission-vision">Our Vision</h1>
-              <p>To deliver the best scholarship service to the college students of Palauig, for them to achieve and live a successful career.</p>
-              <hr>
-              <h1 id="mission-vision">Our Values</h1>
-              <p>To be honest in whatever action that we do, prioritizing students that are truly eligible and in need, doing it right and doing it wholeheartedly. </p>
+        <div class="row">
+          <form action="" class="message-us-container col-6">
+            <h2>Send us your message</h2>
+            <div class="sender-name row">
+              <input type="text" placeholder="First Name" required>
+              <input type="text" placeholder="Last Name" required>
             </div>
-          </div>
-          <div class="carousel-container col-8">
-            <i class="fas fa-arrow-left arrow-left" id="prevbtn"></i>
-            <i class="fas fa-arrow-right arrow-right" id="nextbtn"></i>
-            <div class="carousel-slide">
-              <img src="dest/Slider Images/i5.jpg" id="lastclone">
-              <img src="dest/Slider Images/i1.jpg">
-              <img src="dest/Slider Images/i2.jpg">
-              <img src="dest/Slider Images/i3.jpg">
-              <img src="dest/Slider Images/i4.jpg">
-              <img src="dest/Slider Images/i5.jpg">
-              <img src="dest/Slider Images/i1.jpg"id="firstclone">
+            <div class="sender-emails-number row">
+              <input type="text"  placeholder="Email Address" required> 
+              <input type="text"  placeholder="Phone Number" required>
+            </div>
+            <div class="sender-message-container">
+              <textarea placeholder="Message" rows="10" required></textarea>
+            </div>
+            <div class="contact-submit-button-container">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+          <div class="our-info-container col-3">
+            <h2>Info</h2>
+            <div class="contact-opacity">Palauig, Zambales</div>
+            <div class="contact-opacity">2332-646-3432</div>
+            <div class="contact-opacity">iskolarpalauig@gmail.com</div>
+            <div class="contact-details-container">
+              <h2>Contact Personnels</h2>
+              <div class="president-contact-container">
+                <h3>Iskolar ng Palauig President</h3>
+                <div class="contact-opacity">iskolarpalauigpresident@gmail.com</div>
+                <div class="contact-opacity">09123456780</div>
+              </div>
+              <div class="secretary-contact-container">
+                <h3>Iskolar ng Palauig Secretary</h3>
+                <div class="contact-opacity">iskolarpalauigsecretary@gmail.com</div>
+                <div class="contact-opacity">09123456780</div>
+                <div class="contact-opacity">09123456780</div>
+                <div class="contact-opacity">09123456780</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="from-banner">
-        <h1 class="welcome">
-          Now is your chance to grab the Iskolar ng Palauig scholarship program <div class="pump">!</div>
-        </h1>
       </div>
     </section>
     <footer class="index-footsy">
