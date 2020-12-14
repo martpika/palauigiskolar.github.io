@@ -343,6 +343,7 @@ footer.index-footsy {
 
 footer.index-footsy * {
   font-family: 'JetBrains Mono', monospace;
+  color: #000;
 }
 
 footer .first-footer-col h2 {
@@ -604,6 +605,12 @@ form.message-us-container h2 {
   }
   .from-banner h1.welcome {
     font-size: 2.5rem;
+  }
+  .mobile-stack {
+    width: 50%;
+  }
+  footer h2 {
+    font-size: 1rem;
   }
   .about-page-row {
     padding: 0;
