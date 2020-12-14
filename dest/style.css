@@ -380,6 +380,10 @@ footer a {
   margin-left: 50px;
 }
 
+.about-story * {
+  color: white;
+}
+
 .about-image {
   padding-left: 50px;
 }
