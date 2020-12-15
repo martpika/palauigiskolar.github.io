@@ -4,15 +4,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Palauig Scholarship</title>
     <link rel="stylesheet" href="dest/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
 
   <body>
-    <section class="nav-to-body about-page-change-bg">
+    <section class="nav-to-body signup-page-section1">
       <header class="navigation-links" id="first-navbar">
         <div class="header-container">
           <div class="muni-logo"><a href="index.html"><img src="dest/PALAUIG-SEAL-2.png"></a></div>
@@ -21,12 +22,11 @@
               <ul class="link-lists">
                 <li><a class="closing-button displaying-none" onclick="slidemenu()" href="javascript:void(0);">&#x274c;</a></li>
                 <li><a href="#events">View events</a></li>
-                <li><a href="#about">About us</a></li>
+                <li><a href="about.html">About us</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
             <div class="signers">
-              <a href="signin.html">Sign in</a>
               <a href="signup.html">Sign up</a>
             </div>
           </div>
@@ -36,19 +36,16 @@
           </div>
         </div>
       </header>
-      <div class="about-us-banner">
-        <h1>About Us</h1>
-      </div>
-      <div class="about-page-container container">
-        <div class="about-page-row row">
-          <div class="about-story col-5">
-            <h2>Our Story</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sed neque labore! Iste cum facilis nobis laboriosam inventore doloribus nostrum magni distinctio voluptate, temporibus exercitationem similique molestias ratione nesciunt voluptates eius aliquam, minus illum quo natus autem quis enim! Et illo quasi esse odio quos deserunt quam aperiam sapiente accusantium voluptates quisquam ea pariatur, recusandae adipisci enim. Amet pariatur reiciendis aperiam modi harum dolorem labore odio vel optio atque temporibus, distinctio vero velit eaque, quidem at saepe minima sequi ipsum dolore nam ratione a repellat! Nisi blanditiis sed, accusantium natus eveniet aut veniam architecto aspernatur ullam tempore laboriosam sunt tenetur.</p>
-          </div>
-          <div class="about-image col-5">
-            <img src="dest/PENGUIN_ABOUT.jpg">
-          </div>
-        </div>
+      <div class="signin-container">
+        <form action="" class="signin-landing-page">
+          <ul class="signin-fill-forms">
+          <li><label for="signin-email-address">Email address</label></li>
+          <li><input type="text" required id="signin-email-address"></li>
+          <li><label for="signin-password">Password</label></li>
+          <li><input type="text" required id="signin-password"></li>
+          </ul>
+          <button type="submit">Sign In</button>
+        </form>
       </div>
     </section>
     <footer class="index-footsy">

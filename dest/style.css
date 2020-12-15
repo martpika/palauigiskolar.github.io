@@ -483,6 +483,84 @@ form.message-us-container h2 {
   opacity: .8;
 }
 
+.signup-page-section1 {
+  background: url(HomePage_Section1_BG_plain.jpg) no-repeat !important;
+}
+
+.signup-container {
+  width: 40%;
+  margin: auto;
+  margin-top: 70px;
+  padding: 30px 10px;
+  border-radius: 13px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.signup-container ul.signup-fill-forms li {
+  list-style: none;
+}
+
+.signup-container label {
+  display: block;
+  margin-bottom: 3px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.signup-container ul.signup-fill-forms li input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 13px;
+  font-size: 1.1rem;
+}
+
+.signup-container form button[type="submit"] {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-size: 1.3rem;
+}
+
+.signin-container {
+  width: 30%;
+  margin: auto;
+  margin-top: 120px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 13px;
+  padding: 30px 10px;
+}
+
+.signin-container ul.signin-fill-forms li {
+  list-style: none;
+}
+
+.signin-container label {
+  display: block;
+  margin-bottom: 3px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.signin-container ul.signin-fill-forms li input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 13px;
+  font-size: 1.1rem;
+}
+
+.signin-container form button[type="submit"] {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-size: 1.3rem;
+}
+
 @media screen and (max-width: 1080px) {
   header.navigation-links .muni-logo {
     margin-left: 30px;
@@ -639,6 +717,20 @@ form.message-us-container h2 {
   }
   .our-info-container {
     text-align: center;
+  }
+  .signup-container {
+    margin-top: 10%;
+    width: 70%;
+  }
+  .signup-container .row label {
+    font-size: .9rem;
+  }
+  .signin-container {
+    margin-top: 10%;
+    width: 70%;
+  }
+  .signin-container form label {
+    font-size: .9rem;
   }
 }
 

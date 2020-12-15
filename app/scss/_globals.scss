@@ -357,6 +357,79 @@ form.message-us-container h2 {
 }
 // ####################### End of Contact Page
 
+// ###################### Start of Sign Up Page
+.signup-page-section1 {
+  background: url(HomePage_Section1_BG_plain.jpg) no-repeat !important;
+}
+.signup-container {
+  width: 40%;
+  margin: auto;
+  margin-top: 70px;
+  padding: 30px 10px;
+  border-radius: 13px;
+  background-color: rgba(0, 0, 0, .2);
+}
+.signup-container ul.signup-fill-forms li {
+  list-style: none;
+}
+.signup-container label {
+  display: block;
+  margin-bottom: 3px;
+  color: rgba(255, 255, 255, .6);
+}
+.signup-container ul.signup-fill-forms li input{
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 13px;
+  font-size: 1.1rem;
+}
+.signup-container form button[type="submit"] {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-size: 1.3rem;
+}
+// ###################### End of Sign Up Page
+
+
+// ###################### Start of Sign In Page
+.signin-container {
+  width: 30%;
+  margin: auto;
+  margin-top: 120px;
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 13px;
+  padding: 30px 10px;
+}
+.signin-container  ul.signin-fill-forms li{
+  list-style: none ;
+}
+.signin-container label {
+  display: block;
+  margin-bottom: 3px;
+  color: rgba(255, 255, 255, .6);
+}
+.signin-container ul.signin-fill-forms li input{
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 13px;
+  font-size: 1.1rem;
+}
+.signin-container form button[type="submit"] {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-size: 1.3rem;
+}
+// ###################### End of Sign In Page
 // #################### Start of Mobile Responsive
 @media screen and(max-width: 1080px) {
   header.navigation-links .muni-logo {
@@ -465,6 +538,8 @@ form.message-us-container h2 {
     width: 30%;
   }
   // ###################### End of Contact Page
+
+
   @media screen and(max-width: 780px){
     #mission-vision {
       font-size: 1.2rem;
@@ -517,6 +592,25 @@ form.message-us-container h2 {
     .our-info-container {
       text-align: center;
     }
+    // ###################### Start of Sign Up Page
+    .signup-container {
+      margin-top: 10%;
+      width: 70%;
+    }
+    .signup-container .row label {
+      font-size: .9rem;
+    }
+    // ###################### End of Sign Up Page
+    
+    // ###################### Start of Sign In Page
+    .signin-container {
+      margin-top: 10%;
+      width: 70%;
+    }
+    .signin-container form label {
+      font-size: .9rem;
+    }
+    // ###################### End of Sign In Page
     // ################### Enf of Contact Page
     @media screen and(max-width: 690px) {
       section.nav-to-body {
